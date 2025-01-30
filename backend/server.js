@@ -12,7 +12,7 @@ const port = 4000;
 
 // Middleware to parse JSON and handle CORS
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: 'https://destiny-tch.vercel.app' }))
 
 // Connect to the database
 connectDB();
